@@ -14,11 +14,16 @@ I only adapted the code to work on Mac by excluding .DS_Store files at certain s
 
 The QC_Results.py is used to score and organize the outputs of 3D-QCNET. 
 It assumes the first 4 characters of the filenames are subject ID numbers.
+
 Scoring: 
-    Score of 1 for 15+ bad volumes. - not usable 
-    Score of 2 for 1-14 bad volumes - usable
-    Score of 3 for no bad volumes   - usable
-     * This is scheme is based on DTI acqusition in 64 directions 
+
+   - Score of 1 for 15+ bad volumes. - not usable 
+    
+   - Score of 2 for 1-14 bad volumes - usable
+    
+   - Score of 3 for no bad volumes   - usable
+    
+     * This scoring scheme assumes DTI acqusition in 64 directions 
      
 
 dMRI_QC.sh is a bash shell script that runs NIFTI_Spliter.py, 3d-qcnet.py, and QC_Results.py in sequence. 
