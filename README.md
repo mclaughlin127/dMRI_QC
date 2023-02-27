@@ -3,7 +3,7 @@ Added Python scripts that prepare NIFTI files for 3D-QCNET and organize its outp
 
 
 The NIFTI_Spliter.py is used to convert NIFTI files with multiple volumes into their own NIFTI files, which allows for 3D-QCNET to run them. 
-Be sure to define data_path correctly.
+Be sure to define data_path correctly and make a folder named "pred" within the "input" folder.
 
 
 The code in 3d-qcnet.py was the work of adnamad (https://github.com/adnamad/3D-QCNet) - **follow the setup instructions provided on their page. 
