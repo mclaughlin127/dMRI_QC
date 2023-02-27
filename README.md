@@ -8,7 +8,7 @@ Be sure to define data_path correctly.
 
 The code in 3d-qcnet.py was the work of adnamad (https://github.com/adnamad/3D-QCNet) - **follow the setup instructions provided on his page. 
 
-I only adapted the code to work on MACs by excluding .DS_Store files at certain steps. Besides that some small changes to the .csv output were made.
+I only adapted the code to work on Mac by excluding .DS_Store files at certain steps. Besides that some small changes to the .csv output were made.
 3D-QCNET threshold can be altered in 3d-qcnet.py.
 
 
