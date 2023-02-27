@@ -2,7 +2,7 @@
 
 set -e 
 
-conda_path="/Users/jonahmclaughlin/opt"
+conda_path=" "  # Remember to define the path to anaconda3 folder
 
 
 ################################# Start Splitting NIFTIs #################################
@@ -33,7 +33,6 @@ echo " "
 echo "-----------|Starting 3D-QCNET|-----------"
 echo " "
 source $conda_path/anaconda3/etc/profile.d/conda.sh
-conda create --name 3dqc python=3.6
 conda activate 3dqc
 python 3d-qcnet.py --mode pred
 echo " "
@@ -50,9 +49,4 @@ python QC_Results.py
 echo " "
 echo "-----------|Step 3 Complete|-----------"
 echo " "
-
-################################# Executing Comparisons ################################
-
-#if [ $mode = 'comp' ]
-	
 
