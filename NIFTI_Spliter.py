@@ -12,9 +12,6 @@ def progress_bar(progress, x):
     print(status, end='', flush=True)
 
 def count_files(path='.'):
-    """
-    Return the number of files in the directory at path (including subdirectories)
-    """
     file_count = 0
     with os.scandir(path) as it:
         for entry in it:
@@ -24,7 +21,7 @@ def count_files(path='.'):
                 file_count += count_files(entry.path)
     return file_count
 
-data_path = "/Users/jonahmclaughlin/Downloads/DTI_raw_data/test"
+data_path = " "  # Define file path of data 
 pred_path = "./input/pred"
 
 j = 0
