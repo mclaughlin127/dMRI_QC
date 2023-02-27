@@ -7,10 +7,10 @@ conda_path=" "  # Remember to define the path to anaconda3 folder
 
 ################################# Start Splitting NIFTIs #################################
 
-read -p "Is data_path in NIFTI_Spliter.py defined correctly? ([y]/n) " yn3
-yn3=${yn3:-y}
+read -p "Is data_path in NIFTI_Spliter.py defined correctly? ([y]/n) " yn
+yn=${yn:-y}
 
-if [ $yn3 = 'y' ] || [ $yn3 = 'Y' ]
+if [ $yn = 'y' ] || [ $yn = 'Y' ]
 then 
 	echo " "
 	echo "-----------|Starting to Split NIFTIs|-----------"
@@ -20,7 +20,7 @@ then
 	echo " "
 	echo "-----------|Step 1 Complete|-----------"
 	echo " "
-elif [ $yn3 = 'n' ] || [ $yn3 = 'N' ]
+elif [ $yn = 'n' ] || [ $yn = 'N' ]
 then
 	echo "[Try again after data_path is set correctly]"
 	exit 0
